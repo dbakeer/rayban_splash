@@ -10,14 +10,20 @@
   </head>
   <body>
 
-    <div id="content">
-      YOOOO
-    </div>
+    <table id="content">
+      <tr>
+      <td><img id="logo" src="http://www.wellingtonoptique.be/img/logos/rayban-b.jpg">
+      </td>
+    </tr>
+  </table>
 
     <div id="keypad">
 
-      <form name="rbpass" id="keycode" action="main.html">
+      <form name="rbpass" id="keycode">
 
+        <span>Enter the passcode...</span>
+        <br/>
+        <br/>
         <div id="code">
           <input maxlength="1" id="digit1" class="pass" pattern="[0-9]*" inputmode="numeric" onkeypress="validate(event)">
         </div>

@@ -24,8 +24,10 @@ $(document).ready(function() {
 
     correctPass = "1937";
     if(pass==correctPass) {
-      $("#keycode").fadeOut(1000);
-      $("#content").fadeIn(1000);
+      $("#keycode").fadeOut(1000, function(){
+        $(this).remove();
+        $("#content").fadeIn(8000);
+      });
     }
     else {
       // $("#keycode").effect("shake");

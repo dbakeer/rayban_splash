@@ -1,31 +1,53 @@
 * {
   background: black;
-  color: white;
+  color: red;
 }
 
 #keypad {
   margin: 10% 0 50% 0;
-  font-size: 64px;
-  color: white;
   text-align: center;
 }
 
+#keycode span {
+  font-size: 32px;
+  color: red;
+}
+
 #code {
-  border: 5px red solid;
-  margin: 0 5% 0 5%;
+  border: 1px red solid;
+  margin: 0 2% 0 2%;
   display: inline-table;
   position: relative;
 }
 
 #code input {
   border: none;
-  padding: 3% 3% 3% 35%;
-  font-size: 64px;
+  padding: 3% 3% 3% 40%;
+  font-size: 32px;
   background: transparent;
   width: 100px;
-  height: 150px;
+  height: 50px;
 }
 
 #code input:focus {
   outline: none;
 }
+
+html, body, #content {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#content td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/*#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}*/
