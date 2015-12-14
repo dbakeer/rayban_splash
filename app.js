@@ -15,24 +15,25 @@ function validate(evt) {
 $(document).ready(function() {
   $("#content").hide();
 
-  $(".pass").keydown( function() {
-    pass =
-    $("#digit1").val() +
-    $("#digit2").val() +
-    $("#digit3").val() +
-    $("#digit4").val();
+  $(".pass").keydown(function(){
+    pass = $("#digit1").val() + $("#digit2").val() + $("#digit3").val() + $("#digit4").val();
 
     correctPass = "1937";
-    if(pass==correctPass) {
-      $("#keypad").fadeOut(1000, function(){
-        $(this).remove();
-        $("#content").fadeIn(8000);
-      });
-    }
-    else {
-      // $("#keycode").effect("shake");
-      // $("#message").html('***Invalid email or password***');
-      console.log("Incorrect password");
+
+    if(pass.trim().length==correctPass.length){
+      if (pass==correctPass) {
+        $("#keypad").fadeOut(1000, function(){
+          $(this).remove();
+          $("#content").fadeIn(8000);
+        });
+      } else {
+        $("#keycode").effect("shake");
+        $("#message").html('Incorrect Keycode');
+        $("#digit1").val('');
+        $("#digit2").val('');
+        $("#digit3").val('');
+        $("#digit4").val('');
+      }
     }
   });
 });

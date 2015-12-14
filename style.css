@@ -47,3 +47,7 @@ html, body, #content {
   vertical-align: middle;
   text-align: center;
 }
+
+#codesubmit {
+  display: none;
+}
