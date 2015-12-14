@@ -1,5 +1,6 @@
 * {
   background: black;
+  color: white;
 }
 
 #pass {
@@ -14,5 +15,17 @@
   margin: 0 5% 0 5%;
   display: inline-table;
   position: relative;
-  padding: 1% 1% 1% 1%;
+}
+
+#code input {
+  border: none;
+  padding: 3% 3% 3% 35%;
+  font-size: 64px;
+  background: transparent;
+  width: 100px;
+  height: 150px;
+}
+
+#code input:focus {
+  outline: none;
 }
