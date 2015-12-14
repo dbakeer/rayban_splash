@@ -22,8 +22,10 @@
 
 #code input {
   border: none;
+  color: transparent;
+  text-shadow: 0 0 0 red;
   padding: 3% 3% 3% 40%;
-  font-size: 32px;
+  font-size: 2em;
   background: transparent;
   width: 100px;
   height: 50px;
@@ -45,9 +47,3 @@ html, body, #content {
   vertical-align: middle;
   text-align: center;
 }
-
-/*#logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}*/

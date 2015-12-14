@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>RAY BAN</title>
+
+    <!-- STYLESHEET -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <!-- JAVASCRIPT -->
     <script src="app.js"></script>
   </head>
+
   <body>
 
+    <!-- MAIN PAGE CONTENT -->
     <table id="content">
       <tr>
-      <td><img id="logo" src="http://www.wellingtonoptique.be/img/logos/rayban-b.jpg">
-      </td>
-    </tr>
-  </table>
+        <td>
+          <img src="http://www.wellingtonoptique.be/img/logos/rayban-b.jpg">
+        </td>
+      </tr>
+    </table>
 
+
+    <!-- KEYCODE FOR ENTRY -->
     <div id="keypad">
 
       <form name="rbpass" id="keycode">
 
         <span>Enter the passcode...</span>
+
         <br/>
         <br/>
+
         <div id="code">
           <input maxlength="1" id="digit1" class="pass" pattern="[0-9]*" inputmode="numeric" onkeypress="validate(event)">
         </div>
@@ -39,10 +53,9 @@
         <div id="code">
           <input maxlength="1" id="digit4" class="pass" pattern="[0-9]*" inputmode="numeric" onkeypress="validate(event)">
         </div>
-        <br/>
-        <div id="message"></div>
+        <!-- <br/>
+        <div id="message"></div> -->
       </form>
-
     </div>
 
   </body>

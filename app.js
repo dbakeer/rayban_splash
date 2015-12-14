@@ -24,7 +24,7 @@ $(document).ready(function() {
 
     correctPass = "1937";
     if(pass==correctPass) {
-      $("#keycode").fadeOut(1000, function(){
+      $("#keypad").fadeOut(1000, function(){
         $(this).remove();
         $("#content").fadeIn(8000);
       });
