@@ -78,5 +78,29 @@ html, body, #logo {
 }
 
 #imptext {
-  font-size: 24px;
+  font-size: 28px;
+}
+
+#date {
+  margin: 10% 0 5% 0;
+  font-size: 14px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid red;
+  padding: 0 0 5% 0;
+}
+
+#time {
+  font-size: 14px;
+  margin: 0 0 5% 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid red;
+  padding: 0 0 5% 0;
+}
+
+#details {
+  font-size: 10px;
 }
