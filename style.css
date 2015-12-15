@@ -1,6 +1,7 @@
 * {
   background: black;
   color: red;
+  font-family: Helvetica;
 }
 
 /* KEYCODE */
@@ -40,9 +41,13 @@
   outline: none;
 }
 
+#codesubmit {
+  display: none;
+}
+
 
 /* MAIN PAGE */
-html, body, #content {
+html, body, #logo {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -50,11 +55,28 @@ html, body, #content {
   border: 0;
 }
 
-#content td {
+#logo td {
   vertical-align: middle;
   text-align: center;
 }
 
-#codesubmit {
-  display: none;
+#invite {
+  height: 100%;
+  width: 50%;
+  margin: 0 0 0 25%;
+  padding: 0;
+  border: 0;
+}
+
+#invite td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#regtext {
+  font-size: 18px;
+}
+
+#imptext {
+  font-size: 24px;
 }

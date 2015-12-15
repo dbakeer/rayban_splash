@@ -18,8 +18,8 @@
 
   <body>
 
-    <!-- MAIN PAGE CONTENT -->
-    <table id="content">
+    <!-- LOGO -->
+    <table id="logo">
       <tr>
         <td>
           <img src="http://www.wellingtonoptique.be/img/logos/rayban-b.jpg">
@@ -27,6 +27,14 @@
       </tr>
     </table>
 
+    <!-- INVITE -->
+    <table id="invite">
+      <tr>
+        <td>
+          <span id="regtext">YOU ARE INVITED TO <span id="imptext">A VERY EXCLUSIVE DINNER PRESENTED BY RAYBAN</span> AT THE NEW SOHO FLAGSHIP STORE</span>
+        </td>
+      </tr>
+    </table>
 
     <!-- KEYCODE FOR ENTRY -->
     <div id="keypad">
@@ -53,9 +61,13 @@
         <div id="digit">
           <input maxlength="1" id="digit4" class="pass" pattern="[0-9]*" inputmode="numeric" onkeypress="validate(event)">
         </div>
+
         <input type="submit" id="codesubmit">
         <br/>
+        <br/>
+
         <div id="message"></div>
+
       </form>
     </div>
 
