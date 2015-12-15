@@ -3,8 +3,13 @@
   color: red;
 }
 
+/* KEYCODE */
+#codesubmit {
+  display: none;
+}
+
 #keypad {
-  margin: 10% 0 50% 0;
+  margin: 25% 0 50% 0;
   text-align: center;
 }
 
@@ -13,14 +18,14 @@
   color: red;
 }
 
-#code {
+#digit {
   border: 1px red solid;
   margin: 0 2% 0 2%;
   display: inline-table;
   position: relative;
 }
 
-#code input {
+#digit input {
   border: none;
   color: transparent;
   text-shadow: 0 0 0 red;
@@ -31,10 +36,12 @@
   height: 50px;
 }
 
-#code input:focus {
+#digit input:focus {
   outline: none;
 }
 
+
+/* MAIN PAGE */
 html, body, #content {
   height: 100%;
   width: 100%;
