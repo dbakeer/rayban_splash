@@ -16,8 +16,20 @@ $(document).ready(function() {
 
   $("#logo").hide();
   $("#invite").hide();
+  $("#digit1").focus();
 
-  $(".pass").keydown(function(){
+  $(".pass").keyup(function(){
+
+    // autotab function
+    var $all = $('form :input');
+    var focused = $(':focus')[0];
+    for (var i = 0; i < $all.length - 1; ++i) {
+    if ($all[i] != focused)
+        continue;
+    $all[i + 1].focus();
+    break;
+  }
+
     pass = $("#digit1").val() +
            $("#digit2").val() +
            $("#digit3").val() +

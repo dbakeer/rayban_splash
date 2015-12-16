@@ -47,6 +47,8 @@
 
 
 /* MAIN PAGE */
+
+/* ACTUAL LOGO */
 html, body, #logo {
   height: 100%;
   width: 100%;
@@ -60,10 +62,47 @@ html, body, #logo {
   text-align: center;
 }
 
+/* SCRIBBLE EFFECT ON LOGO */
+@keyframes scribble {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+div#stripped {
+  max-width: 450px;
+  margin: 0 auto;
+  background: #000;
+  background-image: url(http://www.wellingtonoptique.be/img/logos/rayban-b.jpg);
+  background-size: cover;
+  font-size: 0;
+}
+div#stripped svg {
+  background: #000;
+  mix-blend-mode: color;
+}
+
+div#stripped svg polyline {
+  fill: none;
+  stroke: #f00;
+  stroke-width: 200;
+  stroke-dasharray: 20000;
+  stroke-dashoffset: 20000;
+  animation: scribble 3s linear forwards;
+}
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  div#stripped {
+  background-image: url(http://www.wellingtonoptique.be/img/logos/rayban-b.jpg);
+  }
+}
+
+/* THE INVITATION DETAILS */
 #invite {
   height: 100%;
-  width: 50%;
-  margin: 0 0 0 25%;
+  width: 75%;
+  margin: 0 auto;
   padding: 0;
   border: 0;
 }
@@ -78,29 +117,15 @@ html, body, #logo {
 }
 
 #imptext {
-  font-size: 28px;
+  font-size: 24px;
 }
 
-#date {
-  margin: 10% 0 5% 0;
-  font-size: 14px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #e60000;
-  padding: 0 0 5% 0;
-}
-
-#time {
-  font-size: 14px;
-  margin: 0 0 5% 0;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #e60000;
-  padding: 0 0 5% 0;
+#invitesection {
+  padding: 0 0 3% 0;
+  margin: 3% 0 0 0;
+  border-bottom: 1px #e60000 solid;
 }
 
 #details {
-  font-size: 10px;
+  margin: 3% 0 0 0;
 }
