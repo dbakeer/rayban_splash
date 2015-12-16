@@ -13,6 +13,7 @@ function validate(evt) {
 
 // keypad
 $(document).ready(function() {
+
   $("#logo").hide();
   $("#invite").hide();
 
@@ -41,6 +42,7 @@ $(document).ready(function() {
         $("#digit2").val('');
         $("#digit3").val('');
         $("#digit4").val('');
+        $("#digit1").focus();
       }
     }
   });

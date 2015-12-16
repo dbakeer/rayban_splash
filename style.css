@@ -1,6 +1,6 @@
 * {
   background: black;
-  color: red;
+  color: #e60000;
   font-family: Helvetica;
 }
 
@@ -16,11 +16,11 @@
 
 #keycode span {
   font-size: 32px;
-  color: red;
+  color: #e60000;
 }
 
 #digit {
-  border: 1px red solid;
+  border: 1px #e60000 solid;
   margin: 0 2% 0 2%;
   display: inline-table;
   position: relative;
@@ -28,8 +28,8 @@
 
 #digit input {
   border: none;
-  color: transparent;
-  text-shadow: 0 0 0 red;
+  /*color: transparent;*/
+  text-shadow: 0 0 0 #e60000;
   padding: 3% 3% 3% 40%;
   font-size: 2em;
   background: transparent;
@@ -87,7 +87,7 @@ html, body, #logo {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #e60000;
   padding: 0 0 5% 0;
 }
 
@@ -97,7 +97,7 @@ html, body, #logo {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #e60000;
   padding: 0 0 5% 0;
 }
 
