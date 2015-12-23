@@ -44,12 +44,14 @@ $(document).ready(function() {
         $("#keypad").fadeOut(1000, function(){
           $(this).remove();
           $("#logo").fadeIn(8000);
-          $("#logo").fadeOut(2000, function(){
+          $("#logo").fadeOut(function(){
             $(this).remove();
             $("#video").fadeIn(6500);
             $('#video video').bind('ended', function(){
-              $(this).parent().fadeOut(2000);
-              $("#invite").fadeIn(5000);
+              $(this).parent().fadeOut(2000, function(){
+                $(this).remove();
+                $("#invite").fadeIn(5000);
+              });
             });
           });
         });
