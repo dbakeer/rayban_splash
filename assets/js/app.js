@@ -16,6 +16,7 @@ function validate(evt) {
 $(document).ready(function() {
 
   $("#logo").hide();
+  $("#video").hide();
   $("#invite").hide();
   $("#digit1").focus();
 
@@ -45,7 +46,11 @@ $(document).ready(function() {
           $("#logo").fadeIn(8000);
           $("#logo").fadeOut(2000, function(){
             $(this).remove();
-            $("#invite").fadeIn(5000);
+            $("#video").fadeIn(6500);
+            $('#video video').bind('ended', function(){
+              $(this).parent().fadeOut(2000);
+              $("#invite").fadeIn(5000);
+            });
           });
         });
       } else {
