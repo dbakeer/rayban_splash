@@ -36,13 +36,13 @@
 
 #digit input {
   border: none;
-  /*color: transparent;*/
   text-shadow: 0 0 0 #ED1C24;
-  padding: 3% 3% 3% 40%;
+  padding: 3% 0 3% 0;
   font-size: 2em;
   background: transparent;
   width: 100px;
   height: 50px;
+  text-align: center;
 }
 
 #digit input:focus {
@@ -70,42 +70,6 @@ html, body, #logo {
   text-align: center;
 }
 
-/* SCRIBBLE EFFECT ON LOGO */
-/*@keyframes scribble {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-div#stripped {
-  max-width: 450px;
-  margin: 0 auto;
-  background: #000;
-  background-image: url(http://www.wellingtonoptique.be/img/logos/rayban-b.jpg);
-  background-size: cover;
-  font-size: 0;
-}
-div#stripped svg {
-  background: #000;
-  mix-blend-mode: color;
-}
-
-div#stripped svg polyline {
-  fill: none;
-  stroke: #f00;
-  stroke-width: 200;
-  stroke-dasharray: 20000;
-  stroke-dashoffset: 20000;
-  animation: scribble 3s linear forwards;
-}
-@media
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-  div#stripped {
-  background-image: url(http://www.wellingtonoptique.be/img/logos/rayban-b.jpg);
-  }
-}*/
-
 /* THE INVITATION DETAILS */
 #invite {
   height: 100%;
@@ -121,11 +85,11 @@ div#stripped svg polyline {
 }
 
 #regtext {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #imptext {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #invitesection {
