@@ -1,7 +1,15 @@
+@font-face {
+  font-family: 'Trade Gothic';
+  src: url('trade_gothic_lt_bold_condensed_no_20.woff');
+  src: url('tradegothic_lt_boldcondtwenty.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
-  background: black;
-  color: #e60000;
-  font-family: Helvetica;
+  background-image: url('../images/RAYBAN-BG.jpg');
+  color: #ED1C24;
+  font-family: 'Trade Gothic', sans-serif;
 }
 
 /* KEYCODE */
@@ -16,11 +24,11 @@
 
 #keycode span {
   font-size: 32px;
-  color: #e60000;
+  color: #ED1C24;
 }
 
 #digit {
-  border: 1px #e60000 solid;
+  border: 1px #ED1C24 solid;
   margin: 0 2% 0 2%;
   display: inline-table;
   position: relative;
@@ -29,7 +37,7 @@
 #digit input {
   border: none;
   /*color: transparent;*/
-  text-shadow: 0 0 0 #e60000;
+  text-shadow: 0 0 0 #ED1C24;
   padding: 3% 3% 3% 40%;
   font-size: 2em;
   background: transparent;
@@ -63,7 +71,7 @@ html, body, #logo {
 }
 
 /* SCRIBBLE EFFECT ON LOGO */
-@keyframes scribble {
+/*@keyframes scribble {
   to {
     stroke-dashoffset: 0;
   }
@@ -96,7 +104,7 @@ div#stripped svg polyline {
   div#stripped {
   background-image: url(http://www.wellingtonoptique.be/img/logos/rayban-b.jpg);
   }
-}
+}*/
 
 /* THE INVITATION DETAILS */
 #invite {
@@ -123,7 +131,7 @@ div#stripped svg polyline {
 #invitesection {
   padding: 0 0 3% 0;
   margin: 3% 0 0 0;
-  border-bottom: 1px #e60000 solid;
+  border-bottom: 1px #ED1C24 solid;
 }
 
 #details {
