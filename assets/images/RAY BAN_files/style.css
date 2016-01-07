@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'Trade Gothic';
+  src: url('trade_gothic_lt_bold_condensed_no_20.woff');
+  src: url('tradegothic_lt_boldcondtwenty.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  background-image: url('../images/RAYBAN-BG.jpg');
+  background-size: 100%;
+  color: #ED1C24;
+  font-family: 'Trade Gothic', sans-serif;
+  letter-spacing: 2px;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* KEYCODE */
+#codesubmit {
+  display: none;
+}
+
+#keypad {
+  margin: 25% 0 50% 0;
+  text-align: center;
+}
+
+#keycode span {
+  font-size: 18px;
+  color: #ED1C24;
+}
+
+#digit {
+  border: 2px #ED1C24 solid;
+  border-radius: 50%;
+  margin: 0 2% 0 2%;
+  padding: 1.5% 0 1.5% 0;
+  display: inline-table;
+  position: relative;
+}
+
+#digit input {
+  border: none;
+  text-shadow: 0 0 0 #ED1C24;
+  padding: 10% 0 3% 0;
+  font-size: 1em;
+  background: transparent;
+  width: 75px;
+  height: 25px;
+  text-align: center;
+}
+
+#digit input:focus {
+  outline: none;
+}
+
+#codesubmit {
+  display: none;
+}
+
+
+/* MAIN PAGE */
+
+/* ACTUAL LOGO */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*#logo td {
+  vertical-align: middle;
+  text-align: center;
+}*/
+
+/* THE INVITATION DETAILS */
+#invite {
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
+#invite td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#regtext {
+  font-size: 14px;
+}
+
+#imptext {
+  font-size: 18px;
+}
+
+#invitesection {
+  padding: 0 0 3% 0;
+  margin: 3% 0 0 0;
+  /*border-bottom: 1px #ED1C24 solid;*/
+}
+
+#details {
+  margin: 3% 0 0 0;
+}
+
+#video {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#video td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+input::-webkit-input-placeholder {
+color: #ED1C24 !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color: #ED1C24 !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #ED1C24 !important;
+}
+
+input:-ms-input-placeholder {
+color: #ED1C24 !important;
+}
+
+#rsvp {
+  color: #ED1C24;
+  font-size: 18px;
+  border: 2px solid #ED1C24;
+  height: 50px;
+  width: 300px;
+}
+
+#formsubmit {
+  color: #ED1C24;
+  font-size: 18px;
+  border: 2px solid #ED1C24;
+  height: 50px;
+  width: 300px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+#rsvpmessage {
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
+#rsvpmessage td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#name {
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 1px #ED1C24 solid;
+  margin-left:1px;
+  padding: 5px;
+  font-size: 18px;
+  width: 600px;
+  background: transparent;
+  text-align: center;
+}
+
+#name:focus {
+  outline: none;
+  text-align: center;
+}
+
+#rewatch {
+  color: #ED1C24;
+  font-size: 18px;
+  border: 2px solid #ED1C24;
+  height: 50px;
+  width: 300px;
+}
+
+#thankyou {
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
+#thankyou td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.social {
+  fill: #ED1C24;
+}

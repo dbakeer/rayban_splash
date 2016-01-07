@@ -4,13 +4,19 @@
   src: url('tradegothic_lt_boldcondtwenty.ttf');
   font-weight: normal;
   font-style: normal;
-  letter-spacing: 1px;
 }
 
 * {
   background-image: url('../images/RAYBAN-BG.jpg');
+  background-size: 100%;
   color: #ED1C24;
   font-family: 'Trade Gothic', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+body {
+  overflow: hidden;
 }
 
 /* KEYCODE */
@@ -19,18 +25,20 @@
 }
 
 #keypad {
-  margin: 25% 0 50% 0;
+  margin: 50% 0 0 0;
   text-align: center;
 }
 
 #keycode span {
-  font-size: 32px;
+  font-size: 18px;
   color: #ED1C24;
 }
 
 #digit {
-  border: 1px #ED1C24 solid;
+  border: 2px #ED1C24 solid;
+  border-radius: 50%;
   margin: 0 2% 0 2%;
+  padding: 1.5% 0 1.5% 0;
   display: inline-table;
   position: relative;
 }
@@ -38,11 +46,11 @@
 #digit input {
   border: none;
   text-shadow: 0 0 0 #ED1C24;
-  padding: 3% 0 3% 0;
-  font-size: 2em;
+  padding: 5% 0 5% 0;
+  font-size: 24px;
   background: transparent;
-  width: 100px;
-  height: 50px;
+  width: 75px;
+  height: 25px;
   text-align: center;
 }
 
@@ -58,7 +66,7 @@
 /* MAIN PAGE */
 
 /* ACTUAL LOGO */
-html, body, #logo {
+html, body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -66,10 +74,10 @@ html, body, #logo {
   border: 0;
 }
 
-#logo td {
+/*#logo td {
   vertical-align: middle;
   text-align: center;
-}
+}*/
 
 /* THE INVITATION DETAILS */
 #invite {
@@ -86,17 +94,17 @@ html, body, #logo {
 }
 
 #regtext {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #imptext {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #invitesection {
   padding: 0 0 3% 0;
   margin: 3% 0 0 0;
-  border-bottom: 1px #ED1C24 solid;
+  /*border-bottom: 1px #ED1C24 solid;*/
 }
 
 #details {
@@ -114,4 +122,133 @@ html, body, #logo {
 #video td {
   vertical-align: middle;
   text-align: center;
+}
+
+input::-webkit-input-placeholder {
+color: #ED1C24 !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color: #ED1C24 !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #ED1C24 !important;
+}
+
+input:-ms-input-placeholder {
+color: #ED1C24 !important;
+}
+
+#rsvp {
+  color: #ED1C24;
+  font-size: 18px;
+  border: 2px solid #ED1C24;
+  height: 50px;
+  width: 300px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+#rsvp:hover {
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+  -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+  filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+#formsubmit {
+  color: #ED1C24;
+  font-size: 18px;
+  border: 2px solid #ED1C24;
+  height: 50px;
+  width: 300px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+#formsubmit:hover {
+  -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+  -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+  filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+button:focus {
+  outline: 0;
+}
+
+#rsvpmessage {
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
+#rsvpmessage td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#name {
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 1px #ED1C24 solid;
+  margin-left:1px;
+  padding: 5px;
+  font-size: 18px;
+  width: 600px;
+  background: transparent;
+  text-align: center;
+}
+
+#name:focus {
+  outline: none;
+  text-align: center;
+}
+
+#rewatch {
+  color: #ED1C24;
+  font-size: 18px;
+  border: 2px solid #ED1C24;
+  height: 50px;
+  width: 300px;
+}
+
+#thankyou {
+  height: 80%;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
+#thankyou td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+  background: #ED1C24;
+  fill: #ED1C24;
+}
+
+#social a {
+  text-decoration: none;
+}
+
+#social {
+  margin: 51% 0 0 92%;
+  position: fixed;
+  z-index: 99;
 }

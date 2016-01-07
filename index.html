@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>RAY BAN</title>
+    <title>RAYBAN</title>
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="./assets/style/style.css">
@@ -18,21 +18,9 @@
 
   <body>
 
-    <!-- LOGO -->
-    <table id="logo">
-      <tr>
-        <td>
-            <object data="./assets/images/RayBan-logo.svg" type="image/svg+xml">
-              <object data="./assets/images/RayBan-all white.svg" type="image/svg+xml">
-              <img src="./assets/images/RAYBAN-BG.jpg" />
-            </object>
-            </object>
-        </td>
-      </tr>
-    </table>
-
+    <!-- VIDEO -->
     <div id="video">
-      <video width="100%" height="auto" autoplay="autoplay">
+      <video id="actualvideo" width="100%" height="auto" autoplay="autoplay">
         <source src="./assets/images/sample.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
       </video>
     </div>
@@ -56,8 +44,9 @@
             <span id="regtext">7:30PM COCKTAILS / 8:30PM SEATED DINNER</span>
           </div>
 
-          <div id="details">INVITE IS NON-TRANSFERABLE</div>
+          <button id="rsvp">CLICK TO RSVP HERE</button>
 
+          <div id="details">INVITE IS NON-TRANSFERABLE</div>
         </td>
       </tr>
     </table>
@@ -67,32 +56,57 @@
 
       <form name="rbpass" id="keycode">
 
-        <span>Enter the passcode...</span>
-
         <br/>
         <br/>
 
         <div id="digit">
-          <input maxlength="1" id="digit1" class="pass" pattern="[0-9]*" inputmode="numeric" onkeypress="validate(event)" autocomplete="off">
+          <input type="text" maxlength="1" id="digit1" class="pass" pattern="[0-9]*" inputmode="numeric" onkeypress="validate(event)" autocomplete="off">
         </div>
+
         <div id="digit">
-          <input maxlength="1" id="digit2" class="pass" pattern="[0-9]*" inputmode="numeric" onkeypress="validate(event)" autocomplete="off">
+          <input type="text" maxlength="1" id="digit2" class="pass" pattern="[0-9]*" inputmode="numeric" onkeypress="validate(event)" autocomplete="off">
         </div>
+
         <div id="digit">
-          <input maxlength="1" id="digit3" class="pass" pattern="[0-9]*" inputmode="numeric" onkeypress="validate(event)" autocomplete="off">
+          <input type="text" maxlength="1" id="digit3" class="pass" pattern="[0-9]*" inputmode="numeric" onkeypress="validate(event)" autocomplete="off">
         </div>
+
         <div id="digit">
-          <input maxlength="1" id="digit4" class="pass" pattern="[0-9]*" inputmode="numeric" onkeypress="validate(event)" autocomplete="off">
+          <input type="text" maxlength="1" id="digit4" class="pass" pattern="[0-9]*" inputmode="numeric" onkeypress="validate(event)" autocomplete="off">
         </div>
 
         <input type="submit" id="codesubmit">
         <br/>
         <br/>
-
+        <br/>
+        <br/>
+        <span>ENTER THE PASSCODE</span><br/>
+        <span>HINT : THE YEAR RAYBAN WAS FOUNDED</span>
         <div id="message"></div>
 
       </form>
     </div>
 
+    <table id="rsvpmessage">
+      <tr>
+        <td>
+          <form action="http://formspree.io/dinah.bakeer@gmail.com" method="POST">
+            <span id="imptext">PLEASE CONFIRM YOUR NAME</span>
+            <br/>
+            <br/>
+            <br/>
+            <input id="name" type="text" name="name" placeholder="REQUIRED FIELD : YOUR NAME">
+            <br/>
+            <br/>
+            <input type="submit" name="ATTENDING" value="I'M ATTENDING" id="formsubmit">
+            <br/>
+            <br/>
+            <input type="submit" name="NOT ATTENDING" value="I'M NOT ATTENDING" id="formsubmit">
+            <input type="hidden" name="_next" value="thanks.html" />
+            <input type="hidden" name="_subject" value="RSVP for January 28" />
+          </form>
+      </td>
+    </tr>
+    </table>
   </body>
 </html>

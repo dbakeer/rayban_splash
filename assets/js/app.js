@@ -17,13 +17,15 @@ $(document).ready(function() {
 
   $("#logo").hide();
   $("#video").hide();
+  $("#actualvideo").get(0).pause();
   $("#invite").hide();
+  $("#rsvpmessage").hide();
   $("#digit1").focus();
 
   $(".pass").keyup(function(){
 
     // autotab function
-    var $all = $('form :input');
+    var $all = $('form .pass');
     var focused = $(':focus')[0];
     for (var i = 0; i < $all.length - 1; ++i) {
     if ($all[i] != focused)
@@ -43,12 +45,14 @@ $(document).ready(function() {
       if (pass==correctPass) {
         $("#keypad").fadeOut(1000, function(){
           $(this).remove();
-          $("#logo").fadeIn(8000);
-          $("#logo").fadeOut(function(){
-            $(this).remove();
-            $("#video").fadeIn(6500);
+          // $("#logo").fadeIn(8000);
+          // $("#logo").fadeOut(function(){
+          //   $(this).remove();
+          // });
+          $("#video").fadeIn(5000, function(){
+            $("#actualvideo").get(0).play();
             $('#video video').bind('ended', function(){
-              $(this).parent().fadeOut(2000, function(){
+              $(this).parent().fadeOut(function(){
                 $(this).remove();
                 $("#invite").fadeIn(5000);
               });
@@ -65,5 +69,23 @@ $(document).ready(function() {
         $("#digit1").focus();
       }
     }
+  });
+
+  $("#rsvp").click(function(){
+    $("#invite").remove();
+    $("#rsvpmessage").fadeIn(2000);
+  });
+
+  $("#rewatch").click(function(){
+    $("#thankyou").hide();
+    $("#video").fadeIn(5000, function(){
+      $("#actualvideo").get(0).play();
+      $('#video video').bind('ended', function(){
+        $(this).parent().fadeOut(function(){
+          $(this).remove();
+          $("#thankyou").fadeIn(5000);
+        });
+      });
+    });
   });
 });
