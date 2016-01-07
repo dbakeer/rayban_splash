@@ -24,8 +24,10 @@ body {
   display: none;
 }
 
-#keypad {
-  margin: 50% 0 0 0;
+#keycode {
+  top: 40%;
+  position: absolute;
+  width: 100%;
   text-align: center;
 }
 
@@ -221,6 +223,18 @@ button:focus {
   border: 2px solid #ED1C24;
   height: 50px;
   width: 300px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+#rewatch:hover {
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+  -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+  filter: brightness(1.2) grayscale(.5) opacity(.9);
 }
 
 #thankyou {
@@ -243,12 +257,27 @@ button:focus {
   fill: #ED1C24;
 }
 
-#social a {
-  text-decoration: none;
+#social {
+  position: relative;
+  background: transparent;
+  display: inline-block;
 }
 
-#social {
-  margin: 51% 0 0 92%;
+#social a {
+  position: relative;
+  background: transparent;
+  display: inline-block;
+  text-decoration: none;
+  decoration: none;
+}
+
+.icon-container {
   position: fixed;
-  z-index: 99;
+  bottom: 15px;
+  right: 15px;
+  background: transparent;
+}
+
+#thankyou {
+  font-size: 36px;
 }
