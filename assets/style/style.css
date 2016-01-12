@@ -217,6 +217,10 @@ button:focus {
   text-align: center;
 }
 
+:placeholder-shown {
+  opacity: 0.5;
+}
+
 #rewatch {
   color: #ED1C24;
   font-size: 18px;
