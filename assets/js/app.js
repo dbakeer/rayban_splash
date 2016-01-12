@@ -1,15 +1,15 @@
 // numeric keypad
-function validate(evt) {
-  var theEvent = evt || window.event;
-  var key = theEvent.keyCode || theEvent.which;
-  key = String.fromCharCode(key);
-  var regex = /[0-9]|\./;
-  if (!regex.test(key)) {
-    theEvent.returnValue = false;
-    if (theEvent.preventDefault)
-    theEvent.preventDefault();
-  }
-}
+// function validate(evt) {
+//   var theEvent = evt || window.event;
+//   var key = theEvent.keyCode || theEvent.which;
+//   key = String.fromCharCode(key);
+//   var regex = /[0-9]|\./;
+//   if (!regex.test(key)) {
+//     theEvent.returnValue = false;
+//     if (theEvent.preventDefault)
+//     theEvent.preventDefault();
+//   }
+// }
 
 
 // keypad
@@ -20,6 +20,8 @@ $(document).ready(function() {
   $("#actualvideo").get(0).pause();
   $("#invite").hide();
   $("#rsvpmessage").hide();
+  $(".icon-container").hide();
+  $('#mobilewatch').hide();
   $("#digit1").focus();
 
   $(".pass").keyup(function(){
@@ -39,21 +41,35 @@ $(document).ready(function() {
            $("#digit3").val() +
            $("#digit4").val();
 
-    correctPass = "1937";
+    correctPass = "SOHO";
+    correctPass2 = "soho";
 
     if(pass.trim().length==correctPass.length){
-      if (pass==correctPass) {
+      if (pass==correctPass || pass==correctPass2) {
         $("#keypad").fadeOut(1000, function(){
           $(this).remove();
-          // $("#logo").fadeIn(8000);
-          // $("#logo").fadeOut(function(){
-          //   $(this).remove();
-          // });
-          $("#video").fadeIn(5000, function(){
+          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $('#video video').hide();
+            $("#invite").fadeIn(5000);
+            $('#mobilewatch').show();
+            $("#mobilewatch").click(function(){
+              $("#invite").hide();
+              $("#video video").fadeIn(5000, function(){
+                $("#actualvideo").get(0).play();
+                $('#video video').bind('ended', function(){
+                  $(this).parent().fadeOut(function(){
+                    $(this).remove();
+                    $("#invite").fadeIn(5000);
+                  });
+                });
+              });
+            });
+  }
+          $("#video").fadeIn(2000, function(){
             $("#actualvideo").get(0).play();
             $('#video video').bind('ended', function(){
               $(this).parent().fadeOut(function(){
-                $(this).remove();
+                $(this).hide();
                 $("#invite").fadeIn(5000);
               });
             });
@@ -61,7 +77,8 @@ $(document).ready(function() {
         });
       } else {
         $("#keycode").effect("shake");
-        $("#message").html('Incorrect Keycode');
+        $("#message").html('INCORRECT PASSWORD');
+        $('#hint').html('HINT : THE LOCATION OF THE NEW RAYBAN STORE');
         $("#digit1").val('');
         $("#digit2").val('');
         $("#digit3").val('');
@@ -70,6 +87,7 @@ $(document).ready(function() {
       }
     }
   });
+
 
   $("#rsvp").click(function(){
     $("#invite").remove();
