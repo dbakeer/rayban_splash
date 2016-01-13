@@ -166,7 +166,6 @@ color: #ED1C24 !important;
   border: 2px solid #ED1C24;
   height: 50px;
   width: 400px;
-  padding: 1% 5% 1% 5%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -179,6 +178,10 @@ color: #ED1C24 !important;
   -webkit-filter: opacity(.8);
   -moz-filter: opacity(.8);
   filter: opacity(.8);
+}
+
+#formsubmit:focus {
+  outline: 0;
 }
 
 button:focus {
@@ -241,6 +244,10 @@ button:focus {
   filter: opacity(.8);
 }
 
+#rewatch:focus {
+  outline: 0;
+}
+
 #thankyou {
   height: 100%;
   width: 75%;
@@ -275,6 +282,7 @@ button:focus {
   #formsubmit {
     width: 250px;
     font-size: 24px;
+    padding: 1% 5% 1% 5%;
   }
 
   #thankyou {
@@ -329,6 +337,38 @@ button:focus {
 
   #video video{
     margin: 50% 0 0 0;
+  }
+
+  #keycode {
+    top: 30%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mobilebreak {
+    display: block;
+  }
+
+  #digit {
+    border: 2px #ED1C24 solid;
+    border-radius: 100%;
+    margin: 0 1% 0 1%;
+    display: inline-table;
+    position: relative;
+    width: 60px;
+    height: 60px;
+  }
+
+  #digit input {
+    border: none;
+    text-shadow: 0 0 0 #ED1C24;
+    font-size: 24px;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 15%;
   }
 }
 
