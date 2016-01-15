@@ -9,7 +9,7 @@
 * {
   background-image: url('../images/RAYBAN-BG.jpg');
   background-size: 100%;
-  color: #ED1C24;
+  color: white;
   font-family: 'Trade Gothic', sans-serif;
   letter-spacing: .1em;
   text-transform: uppercase;
@@ -37,12 +37,12 @@ body {
 
 #keycode span {
   font-size: 20px;
-  color: #ED1C24;
+  color: white;
   margin-bottom: 5%;
 }
 
 #digit {
-  border: 2px #ED1C24 solid;
+  border: 2px white solid;
   border-radius: 100%;
   margin: 0 1% 0 1%;
   display: inline-table;
@@ -53,7 +53,7 @@ body {
 
 #digit input {
   border: none;
-  text-shadow: 0 0 0 #ED1C24;
+  text-shadow: 0 0 0 white;
   font-size: 24px;
   background: transparent;
   width: 40px;
@@ -69,7 +69,6 @@ body {
 #codesubmit {
   display: none;
 }
-
 
 /* MAIN PAGE */
 
@@ -108,6 +107,11 @@ html, body {
   margin: 0 0 5% 0;
 }
 
+#invitesection img {
+  width: 150px;
+  height: 150px;
+}
+
 #details {
   margin: 3% 0 0 0;
 }
@@ -125,25 +129,25 @@ html, body {
 }
 
 input::-webkit-input-placeholder {
-color: #ED1C24 !important;
+color: white !important;
 }
 
 input:-moz-placeholder { /* Firefox 18- */
-color: #ED1C24 !important;
+color: white !important;
 }
 
 input::-moz-placeholder {  /* Firefox 19+ */
-color: #ED1C24 !important;
+color: white !important;
 }
 
 input:-ms-input-placeholder {
-color: #ED1C24 !important;
+color: white !important;
 }
 
 #rsvp {
-  color: #ED1C24;
-  font-size: 24px;
-  border: 2px solid #ED1C24;
+  color: white;
+  font-size: 18px;
+  border: 2px solid white;
   height: 50px;
   width: 300px;
   -webkit-appearance: none;
@@ -161,9 +165,9 @@ color: #ED1C24 !important;
 }
 
 #formsubmit {
-  color: #ED1C24;
+  color: white;
   font-size: 24px;
-  border: 2px solid #ED1C24;
+  border: 2px solid white;
   height: 50px;
   width: 400px;
   -webkit-appearance: none;
@@ -178,10 +182,6 @@ color: #ED1C24 !important;
   -webkit-filter: opacity(.8);
   -moz-filter: opacity(.8);
   filter: opacity(.8);
-}
-
-#formsubmit:focus {
-  outline: 0;
 }
 
 button:focus {
@@ -205,7 +205,7 @@ button:focus {
   border-right: 0;
   border-left: 0;
   border-top: 0;
-  border-bottom: 1px #ED1C24 solid;
+  border-bottom: 1px white solid;
   margin-left:1px;
   margin-bottom: 75px;
   padding: 5px;
@@ -225,9 +225,9 @@ button:focus {
 }
 
 #rewatch {
-  color: #ED1C24;
+  color: white;
   font-size: 18px;
-  border: 2px solid #ED1C24;
+  border: 2px solid white;
   height: 50px;
   width: 300px;
   -webkit-appearance: none;
@@ -244,7 +244,27 @@ button:focus {
   filter: opacity(.8);
 }
 
-#rewatch:focus {
+#invite-return {
+  color: white;
+  font-size: 18px;
+  border: 2px solid white;
+  height: 50px;
+  width: 300px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+#invite-return:hover {
+  -webkit-filter: opacity(.8);
+  -moz-filter: opacity(.8);
+  filter: opacity(.8);
+}
+
+#formsubmit:focus {
   outline: 0;
 }
 
@@ -303,11 +323,13 @@ button:focus {
   }
 
   #regtext {
-    font-size: 14px;
+    font-size: 10px;
+    padding-bottom: 10%;
   }
 
   #imptext {
-    font-size: 18px;
+    font-size: 13.5px;
+
   }
 
   #clicktowatch {
@@ -316,9 +338,9 @@ button:focus {
 
 
   #mobilewatch {
-    color: #ED1C24;
+    color: white;
     font-size: 24px;
-    border-bottom: 1px solid #ED1C24;
+    border-bottom: 1px solid white;
     width: 300px;
     margin: 5% 0 20% 0;
     -webkit-appearance: none;
@@ -351,7 +373,7 @@ button:focus {
   }
 
   #digit {
-    border: 2px #ED1C24 solid;
+    border: 2px white solid;
     border-radius: 100%;
     margin: 0 1% 0 1%;
     display: inline-table;
@@ -362,13 +384,17 @@ button:focus {
 
   #digit input {
     border: none;
-    text-shadow: 0 0 0 #ED1C24;
+    text-shadow: 0 0 0 white;
     font-size: 24px;
     background: transparent;
     width: 40px;
     height: 40px;
     text-align: center;
     padding-top: 15%;
+  }
+
+  #invitesection img {
+    display: none;
   }
 }
 
@@ -379,8 +405,8 @@ button:focus {
 /*.icon {
   height: 16px;
   width: 16px;
-  background: #ED1C24;
-  fill: #ED1C24;
+  background: white;
+  fill: white;
 }
 
 .icon-container a {

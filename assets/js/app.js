@@ -23,6 +23,19 @@ $(document).ready(function() {
   $(".icon-container").hide();
   $('#mobilewatch').hide();
   $("#digit1").focus();
+  $('form > input').keyup(function() {
+    var empty1 = false;
+    $('form > input').each(function() {
+      if ($(this).val() === '') {
+        empty1 = true;
+      }
+    });
+    if (empty1) {
+      $('#formsubmit').attr('disabled', 'disabled');
+    } else {
+      $('#formsubmit').prop("disabled", false);
+    }
+  });
 
   $(".pass").keyup(function(){
 
@@ -78,7 +91,7 @@ $(document).ready(function() {
       } else {
         $("#keycode").effect("shake");
         $("#message").html('INCORRECT PASSWORD');
-        $('#hint').html('HINT : THE LOCATION OF THE NEW RAYBAN STORE');
+        $('#hint').html('HINT : THE LOCATION OF THE NEW RAY-BAN STORE');
         $("#digit1").val('');
         $("#digit2").val('');
         $("#digit3").val('');
@@ -105,5 +118,10 @@ $(document).ready(function() {
         });
       });
     });
+  });
+
+  $("#invite-return").click(function(){
+    $("#thankyou").hide();
+    $("#invite").fadeIn(5000);
   });
 });
