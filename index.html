@@ -1,13 +1,16 @@
 <!DOCTYPE html>
+
 <html>
 
+
   <head>
+    <!-- PREVENTS PAGE ZOOMING ON MOBILE VIEW -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
     <title>RAY-BAN</title>
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="./assets/style/style.css">
-    <link rel="stylesheet" href="./assets/style/icomoon.css">
 
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -17,7 +20,46 @@
     <script src="./assets/js/app.js"></script>
   </head>
 
+
   <body>
+
+
+    <!-- KEYCODE FOR ENTRY -->
+    <div id="keypad">
+
+      <form name="rbpass" id="keycode">
+
+        <!-- VALUE ONE -->
+        <div id="val">
+          <input type="text" maxlength="1" id="val1" class="pass" onkeypress="validate(event)" autocomplete="off">
+        </div>
+
+        <!-- VALUE TWO -->
+        <div id="val">
+          <input type="text" maxlength="1" id="val2" class="pass" onkeypress="validate(event)" autocomplete="off">
+        </div>
+
+        <!-- VALUE THREE -->
+        <div id="val">
+          <input type="text" maxlength="1" id="val3" class="pass" onkeypress="validate(event)" autocomplete="off">
+        </div>
+
+        <!-- VALUE FOUR -->
+        <div id="val">
+          <input type="text" maxlength="1" id="val4" class="pass" onkeypress="validate(event)" autocomplete="off">
+        </div>
+
+        <!-- hidden submit button -->
+        <input type="submit" id="codesubmit">
+        <div>ENTER THE PASSCODE</div>
+        <div id="message"></div>
+        <div id="hint"></div>
+
+      </form>
+    </div>
+
+
+
 
     <!-- VIDEO -->
     <div id="video">
@@ -26,6 +68,7 @@
       </video>
     </div>
 
+
     <!-- INVITE -->
     <table id="invite">
       <tr>
@@ -33,16 +76,21 @@
           <div id="invitesection">
 
             <img src="./assets/images/logo.svg">
-            <br/>
-            <div id="mobilewatch"><span id="imptext">THE ODYSSEY: RISE OF AN ICON TRAILER</span><br/><div id="mobileclick"><span id="regtext" id="clicktowatch">CLICK TO WATCH</span><br/><br/></div></div>
 
-            <span id="imptext">ZOE KRAVITZ, ELLE KING, & SIMON HAMMERSTEIN
+            <div id="mobilewatch">
+              <span id="imptext">116 wooster trailer</span>
               <br/>
-              <span id="regtext" class="mobilebreak">invite you to join them for an </span>
+              <span class="clicktowatch" id="regtext">click to watch</span>
+          </div>
+          <br/>
+          <div id="invitesection">
+            <span id="imptext">zoe kravitz, elle king, & simon hammerstein
+              <br/>
+              <span id="regtext">invite you to join them for an </span>
           </div>
 
           <div id="invitesection">
-            <span id="imptext">INTIMATE DINNER party AT THE RAY-BAN HUB</span>
+            <span id="imptext">intimate dinner party at the ray-ban hub</span>
           </div>
 
           <div id="invitesection">
@@ -65,46 +113,6 @@
       </tr>
     </table>
 
-    <!-- KEYCODE FOR ENTRY -->
-    <div id="keypad">
-
-      <form name="rbpass" id="keycode">
-
-        <br/>
-        <br/>
-
-        <div id="digit">
-          <input type="text" maxlength="1" id="digit1" class="pass" onkeypress="validate(event)" autocomplete="off">
-        </div>
-
-        <div id="digit">
-          <input type="text" maxlength="1" id="digit2" class="pass" onkeypress="validate(event)" autocomplete="off">
-        </div>
-
-        <div id="digit">
-          <input type="text" maxlength="1" id="digit3" class="pass" onkeypress="validate(event)" autocomplete="off">
-        </div>
-
-        <div id="digit">
-          <input type="text" maxlength="1" id="digit4" class="pass" onkeypress="validate(event)" autocomplete="off">
-        </div>
-
-        <input type="submit" id="codesubmit">
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <span>ENTER THE PASSCODE</span>
-        <br/>
-        <br/>
-        <br/>
-        <div id="message"></div>
-        <br/>
-        <span id="hint"></span>
-
-      </form>
-    </div>
-
     <table id="rsvpmessage">
       <tr>
         <td>
@@ -126,16 +134,5 @@
         </td>
       </tr>
     </table>
-
-    <!-- SOCIAL MEDIA -->
-    <!-- <div class="icon-container">
-      <a href="https://www.facebook.com/RAY-BAN" target="_blank"><div class="icon-facebook" id="social" target="_blank"></div></a>
-
-      <a href="https://www.instagram.com/rayban/" target="_blank"><div class="icon-insta" id="social" target="_blank"></div></a>
-
-      <a href="https://pinterest.com/raybanofficial/" target="_blank"><div class="icon-pinterest" id="social" target="_blank"></div></a>
-
-      <a href="https://twitter.com/ray_ban" target="_blank"><div class="icon-twitter" id="social" target="_blank"></div></a>
-    </div> -->
   </body>
 </html>

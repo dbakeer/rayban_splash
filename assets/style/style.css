@@ -1,3 +1,4 @@
+/* GENERAL DETAILS */
 @font-face {
   font-family: 'Trade Gothic';
   src: url('trade_gothic_lt_bold_condensed_no_20.woff');
@@ -19,29 +20,36 @@
   background-size: cover;
 }
 
-body {
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
   overflow: hidden;
 }
+
+
 
 /* KEYCODE */
 #codesubmit {
   display: none;
 }
 
-#keycode {
+#keypad {
   top: 40%;
   position: absolute;
   width: 100%;
   text-align: center;
 }
 
-#keycode span {
+#keycode div {
   font-size: 20px;
   color: white;
-  margin-bottom: 5%;
+  margin: 0 0 5% 0;
 }
 
-#digit {
+#val {
   border: 2px white solid;
   border-radius: 100%;
   margin: 0 1% 0 1%;
@@ -51,7 +59,7 @@ body {
   height: 75px;
 }
 
-#digit input {
+#val input {
   border: none;
   text-shadow: 0 0 0 white;
   font-size: 24px;
@@ -62,24 +70,25 @@ body {
   padding-top: 25%;
 }
 
-#digit input:focus {
+#val input:focus {
   outline: none;
 }
 
-#codesubmit {
-  display: none;
-}
 
-/* MAIN PAGE */
 
-/* ACTUAL LOGO */
-html, body {
-  height: 100%;
+/* VIDEO */
+#video video {
   width: 100%;
-  margin: 0;
-  padding: 0;
+  height: 100%;
   border: 0;
 }
+
+#video td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+
 
 /* THE INVITATION DETAILS */
 #invite {
@@ -96,11 +105,11 @@ html, body {
 }
 
 #regtext {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #imptext {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 #invitesection {
@@ -108,8 +117,8 @@ html, body {
 }
 
 #invitesection img {
-  width: 275px;
-  height: 275px;
+  width: 250px;
+  height: 250px;
   margin: -5% 0 -3% 0;
 }
 
@@ -117,16 +126,7 @@ html, body {
   margin: 3% 0 0 0;
 }
 
-#video video {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
 
-#video td {
-  vertical-align: middle;
-  text-align: center;
-}
 
 input::-webkit-input-placeholder {
 color: white !important;
@@ -329,32 +329,20 @@ button:focus {
 
   #imptext {
     font-size: 13.5px;
-
-  }
-
-  #clicktowatch {
-    margin: 0 0 15px 0;
   }
 
 
   #mobilewatch {
     color: white;
     font-size: 24px;
-    border-bottom: 1px solid white;
     width: 300px;
-    margin: 5% 0 20% 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -webkit-transition: all 100ms ease-in;
-    -moz-transition: all 100ms ease-in;
-    transition: all 100ms ease-in;
+    margin: 5% 0 0 0;
+    padding-bottom: 5%;
   }
 
-  #mobilewatch:hover {
-    -webkit-filter: opacity(.8);
-    -moz-filter: opacity(.8);
-    filter: opacity(.8);
+  .clicktowatch {
+    text-decoration: underline;
+    display: inline;
   }
 
   #video video{
@@ -368,11 +356,7 @@ button:focus {
     text-align: center;
   }
 
-  .mobilebreak {
-    display: block;
-  }
-
-  #digit {
+  #val {
     border: 2px white solid;
     border-radius: 100%;
     margin: 0 1% 0 1%;
@@ -382,7 +366,7 @@ button:focus {
     height: 60px;
   }
 
-  #digit input {
+  #val input {
     border: none;
     text-shadow: 0 0 0 white;
     font-size: 24px;
@@ -394,47 +378,11 @@ button:focus {
   }
 
   #invitesection img {
-    display: none;
+    height: 150px;
+    width: 150px;
+  }
+
+  #invitesection {
+    margin: 0 0 5% 0;
   }
 }
-
-
-
-/* SOCIAL MEDIA ICONS */
-
-/*.icon {
-  height: 16px;
-  width: 16px;
-  background: white;
-  fill: white;
-}
-
-.icon-container a {
-  text-decoration: none;
-  background: transparent;
-}
-
-#social {
-  position: relative;
-  background: transparent;
-  display: inline-block;
-}
-
-.icon-container {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  background: transparent;
-}
-
-.icon-container2 {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  background: transparent;
-}
-
-.icon-container2 a {
-  text-decoration: none;
-  background: transparent;
-}*/
